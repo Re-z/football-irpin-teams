@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+
+<body>
+  <div class="container">
+    <h1 class="text-center text-info bg-primary">Ирпень, среда 20:30 - 22:00</h1>
+    <div class="row">
+      <h2 class="col-md-12">Игроки:</h2>
+
+      <ul class="col-md-12" id="players-list">
+        <!-- players are going to be rendered here -->
+      </ul>
+    </div>
+    <div class="row mb-2 mt-2">
+      <h3 class="col-md-12">Добавить нового игрока:</h3> 
+        <div class="col-md-8">
+            <input class="form-control" id="newPlayer" type="text" placeholder="Имя нового игрока" id="inputLarge">
+        </div>
+        <div class="col-md-3">
+            <button id="addNewPlayer" class="btn btn-success" style="width: 100%">Добавить</button>
+        </div>
+
+        
+    </div>
+
+    <div class="row">
+        <div class="col-md-12">
+            <button id="createTeamsBtn" class="btn btn-lg btn-success">Создать команды</button>
+          </div>
+    </div>
+
+    <div id="result" class="row mt-5">
+      
+      <div class="col-md-5">
+          <div class="card text-white bg-success">
+              <div class="card-header">Команда №1</div>
+              <ul class="card-body" id='team1'>
+                <!-- team 2 are going to be rendered here -->
+              </ul>
+          </div>
+      </div>
+        
+
+      <div class="col-md-5">
+          <div class="card text-white bg-info">
+              <div class="card-header">Команда №2</div>
+              <ul class="card-body" id='team2'>
+                <!-- team 1 are going to be rendered here -->
+              </ul>
+          </div>
+      </div>
+
+
+
+
+    </div>
+
+  </div>
+
+
+  <script src="js/script.js"></script>
+</body>
+<style>
+  #players-list {
+    columns: 3;
+  }
+  #result {
+    display: none;
+  }
+</style>
+
+</html>
